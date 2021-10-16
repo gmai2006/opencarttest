@@ -1,19 +1,30 @@
-# Auto-generated JEE application
+# Auto-generated opencart application from opencart db schema
 ## Instruction
 All instructions should be run in a terminal
 
 ### Clone the project
 ```git clone https://github.com/gmai2006/powerbuildertest.git```
 
-### Run the gradle build to download all dependencies and setup your eclipse .classpath
-```gradle copyReact -x test build```
+### Run the gradle build
+```gradle spotlessApply build```
 
-#### Run the application
+### Optional integration test
+```gradle IntegrationTest```
 
+### Run the application
+cd ui
+npm install
+npm start
 
-##Troubleshoot
-- React proxy server is set to http://localhost:8080/
-- React homepage in the package.json is set to powerbuildertest
+Generated UI components
+![An overview](opencart1.png?raw=true "Title")
+
+Openpay entity relationship diagram - generated from the DB schema
+![Openpay entity relationship model](opencart2.png?raw=true "Title")
+
+A tabular view with test data of a table in openpay DB.  
+![A view of a table in openpay](opencart3.png?raw=true "Title")
+
 
   
 
