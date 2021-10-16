@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                       http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+  <persistence-unit name="testpersistence" transaction-type="RESOURCE_LOCAL">
+  <!-- <provider>org.hibernate.ejb.HibernatePersistence</provider> -->
+  <!-- https://stackoverflow.com/questions/39410183/hibernate-5-2-2-no-persistence-provider-for-entitymanager -->
+  <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+  	<class>com.opencart.test.entity.OcAddress</class> 
+  	<class>com.opencart.test.entity.OcAffiliate</class> 
+  	<class>com.opencart.test.entity.OcAffiliateActivity</class> 
+  	<class>com.opencart.test.entity.OcAffiliateLogin</class> 
+  	<class>com.opencart.test.entity.OcAffiliateTransaction</class> 
+  	<class>com.opencart.test.entity.OcApi</class> 
+  	<class>com.opencart.test.entity.OcApiIp</class> 
+  	<class>com.opencart.test.entity.OcApiSession</class> 
+  	<class>com.opencart.test.entity.OcAttribute</class> 
+  	<class>com.opencart.test.entity.OcAttributeDescription</class> 
+  	<class>com.opencart.test.entity.OcAttributeGroup</class> 
+  	<class>com.opencart.test.entity.OcAttributeGroupDescription</class> 
+  	<class>com.opencart.test.entity.OcBanner</class> 
+  	<class>com.opencart.test.entity.OcBannerImage</class> 
+  	<class>com.opencart.test.entity.OcCart</class> 
+  	<class>com.opencart.test.entity.OcCategory</class> 
+  	<class>com.opencart.test.entity.OcCategoryDescription</class> 
+  	<class>com.opencart.test.entity.OcCategoryFilter</class> 
+  	<class>com.opencart.test.entity.OcCategoryPath</class> 
+  	<class>com.opencart.test.entity.OcCategoryToLayout</class> 
+  	<class>com.opencart.test.entity.OcCategoryToStore</class> 
+  	<class>com.opencart.test.entity.OcCountry</class> 
+  	<class>com.opencart.test.entity.OcCoupon</class> 
+  	<class>com.opencart.test.entity.OcCouponCategory</class> 
+  	<class>com.opencart.test.entity.OcCouponHistory</class> 
+  	<class>com.opencart.test.entity.OcCouponProduct</class> 
+  	<class>com.opencart.test.entity.OcCurrency</class> 
+  	<class>com.opencart.test.entity.OcCustomField</class> 
+  	<class>com.opencart.test.entity.OcCustomFieldCustomerGroup</class> 
+  	<class>com.opencart.test.entity.OcCustomFieldDescription</class> 
+  	<class>com.opencart.test.entity.OcCustomFieldValue</class> 
+  	<class>com.opencart.test.entity.OcCustomFieldValueDescription</class> 
+  	<class>com.opencart.test.entity.OcCustomer</class> 
+  	<class>com.opencart.test.entity.OcCustomerActivity</class> 
+  	<class>com.opencart.test.entity.OcCustomerGroup</class> 
+  	<class>com.opencart.test.entity.OcCustomerGroupDescription</class> 
+  	<class>com.opencart.test.entity.OcCustomerHistory</class> 
+  	<class>com.opencart.test.entity.OcCustomerIp</class> 
+  	<class>com.opencart.test.entity.OcCustomerLogin</class> 
+  	<class>com.opencart.test.entity.OcCustomerOnline</class> 
+  	<class>com.opencart.test.entity.OcCustomerReward</class> 
+  	<class>com.opencart.test.entity.OcCustomerSearch</class> 
+  	<class>com.opencart.test.entity.OcCustomerTransaction</class> 
+  	<class>com.opencart.test.entity.OcCustomerWishlist</class> 
+  	<class>com.opencart.test.entity.OcDownload</class> 
+  	<class>com.opencart.test.entity.OcDownloadDescription</class> 
+  	<class>com.opencart.test.entity.OcEvent</class> 
+  	<class>com.opencart.test.entity.OcExtension</class> 
+  	<class>com.opencart.test.entity.OcFilter</class> 
+  	<class>com.opencart.test.entity.OcFilterDescription</class> 
+  	<class>com.opencart.test.entity.OcFilterGroup</class> 
+  	<class>com.opencart.test.entity.OcFilterGroupDescription</class> 
+  	<class>com.opencart.test.entity.OcGeoZone</class> 
+  	<class>com.opencart.test.entity.OcInformation</class> 
+  	<class>com.opencart.test.entity.OcInformationDescription</class> 
+  	<class>com.opencart.test.entity.OcInformationToLayout</class> 
+  	<class>com.opencart.test.entity.OcInformationToStore</class> 
+  	<class>com.opencart.test.entity.OcLanguage</class> 
+  	<class>com.opencart.test.entity.OcLayout</class> 
+  	<class>com.opencart.test.entity.OcLayoutModule</class> 
+  	<class>com.opencart.test.entity.OcLayoutRoute</class> 
+  	<class>com.opencart.test.entity.OcLengthClass</class> 
+  	<class>com.opencart.test.entity.OcLengthClassDescription</class> 
+  	<class>com.opencart.test.entity.OcLocation</class> 
+  	<class>com.opencart.test.entity.OcManufacturer</class> 
+  	<class>com.opencart.test.entity.OcManufacturerToStore</class> 
+  	<class>com.opencart.test.entity.OcMarketing</class> 
+  	<class>com.opencart.test.entity.OcMenu</class> 
+  	<class>com.opencart.test.entity.OcMenuDescription</class> 
+  	<class>com.opencart.test.entity.OcMenuModule</class> 
+  	<class>com.opencart.test.entity.OcModification</class> 
+  	<class>com.opencart.test.entity.OcModule</class> 
+  	<class>com.opencart.test.entity.OcOption</class> 
+  	<class>com.opencart.test.entity.OcOptionDescription</class> 
+  	<class>com.opencart.test.entity.OcOptionValue</class> 
+  	<class>com.opencart.test.entity.OcOptionValueDescription</class> 
+  	<class>com.opencart.test.entity.OcOrder</class> 
+  	<class>com.opencart.test.entity.OcOrderCustomField</class> 
+  	<class>com.opencart.test.entity.OcOrderHistory</class> 
+  	<class>com.opencart.test.entity.OcOrderOption</class> 
+  	<class>com.opencart.test.entity.OcOrderProduct</class> 
+  	<class>com.opencart.test.entity.OcOrderRecurring</class> 
+  	<class>com.opencart.test.entity.OcOrderRecurringTransaction</class> 
+  	<class>com.opencart.test.entity.OcOrderStatus</class> 
+  	<class>com.opencart.test.entity.OcOrderTotal</class> 
+  	<class>com.opencart.test.entity.OcOrderVoucher</class> 
+  	<class>com.opencart.test.entity.OcProduct</class> 
+  	<class>com.opencart.test.entity.OcProductAttribute</class> 
+  	<class>com.opencart.test.entity.OcProductDescription</class> 
+  	<class>com.opencart.test.entity.OcProductDiscount</class> 
+  	<class>com.opencart.test.entity.OcProductFilter</class> 
+  	<class>com.opencart.test.entity.OcProductImage</class> 
+  	<class>com.opencart.test.entity.OcProductOption</class> 
+  	<class>com.opencart.test.entity.OcProductOptionValue</class> 
+  	<class>com.opencart.test.entity.OcProductRecurring</class> 
+  	<class>com.opencart.test.entity.OcProductRelated</class> 
+  	<class>com.opencart.test.entity.OcProductReward</class> 
+  	<class>com.opencart.test.entity.OcProductSpecial</class> 
+  	<class>com.opencart.test.entity.OcProductToCategory</class> 
+  	<class>com.opencart.test.entity.OcProductToDownload</class> 
+  	<class>com.opencart.test.entity.OcProductToLayout</class> 
+  	<class>com.opencart.test.entity.OcProductToStore</class> 
+  	<class>com.opencart.test.entity.OcRecurring</class> 
+  	<class>com.opencart.test.entity.OcRecurringDescription</class> 
+  	<class>com.opencart.test.entity.OcReturn</class> 
+  	<class>com.opencart.test.entity.OcReturnAction</class> 
+  	<class>com.opencart.test.entity.OcReturnHistory</class> 
+  	<class>com.opencart.test.entity.OcReturnReason</class> 
+  	<class>com.opencart.test.entity.OcReturnStatus</class> 
+  	<class>com.opencart.test.entity.OcReview</class> 
+  	<class>com.opencart.test.entity.OcSetting</class> 
+  	<class>com.opencart.test.entity.OcStockStatus</class> 
+  	<class>com.opencart.test.entity.OcStore</class> 
+  	<class>com.opencart.test.entity.OcTaxClass</class> 
+  	<class>com.opencart.test.entity.OcTaxRate</class> 
+  	<class>com.opencart.test.entity.OcTaxRateToCustomerGroup</class> 
+  	<class>com.opencart.test.entity.OcTaxRule</class> 
+  	<class>com.opencart.test.entity.OcTheme</class> 
+  	<class>com.opencart.test.entity.OcTranslation</class> 
+  	<class>com.opencart.test.entity.OcUpload</class> 
+  	<class>com.opencart.test.entity.OcUrlAlias</class> 
+  	<class>com.opencart.test.entity.OcUser</class> 
+  	<class>com.opencart.test.entity.OcUserGroup</class> 
+  	<class>com.opencart.test.entity.OcVoucher</class> 
+  	<class>com.opencart.test.entity.OcVoucherHistory</class> 
+  	<class>com.opencart.test.entity.OcVoucherTheme</class> 
+  	<class>com.opencart.test.entity.OcVoucherThemeDescription</class> 
+  	<class>com.opencart.test.entity.OcWeightClass</class> 
+  	<class>com.opencart.test.entity.OcWeightClassDescription</class> 
+  	<class>com.opencart.test.entity.OcZone</class> 
+  	<class>com.opencart.test.entity.OcZoneToGeoZone</class> 
+  	<class>com.opencart.test.entity.DataLoadingStatus</class> 
+      <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <!-- Configuring JDBC properties -->
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:test;"/>
+      <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+
+      <!-- Hibernate properties -->
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+      <property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+      <property name="hibernate.format_sql" value="false"/>
+      <property name="hibernate.show_sql" value="true"/>
+
+    </properties>
+    </persistence-unit>
+
+</persistence>

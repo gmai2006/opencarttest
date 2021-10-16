@@ -1,0 +1,92 @@
+[
+  {
+    "image": "53",
+    "bannerId": 0,
+    "sortOrder": 0,
+    "languageId": 0,
+    "link": "Lorem ipsum dolor si0",
+    "title": "Lorem ipsum dolor si0",
+    "bannerImageId": 465254598
+  },
+  {
+    "image": "84",
+    "bannerId": 1,
+    "sortOrder": 1,
+    "languageId": 1,
+    "link": "Lorem ipsum dolor si1",
+    "title": "Lorem ipsum dolor si1",
+    "bannerImageId": 1491369800
+  },
+  {
+    "image": "23",
+    "bannerId": 2,
+    "sortOrder": 2,
+    "languageId": 2,
+    "link": "Lorem ipsum dolor si2",
+    "title": "Lorem ipsum dolor si2",
+    "bannerImageId": 1182098003
+  },
+  {
+    "image": "1",
+    "bannerId": 3,
+    "sortOrder": 3,
+    "languageId": 3,
+    "link": "Lorem ipsum dolor si3",
+    "title": "Lorem ipsum dolor si3",
+    "bannerImageId": 655723156
+  },
+  {
+    "image": "79",
+    "bannerId": 4,
+    "sortOrder": 4,
+    "languageId": 4,
+    "link": "Lorem ipsum dolor si4",
+    "title": "Lorem ipsum dolor si4",
+    "bannerImageId": 585089613
+  },
+  {
+    "image": "16",
+    "bannerId": 5,
+    "sortOrder": 5,
+    "languageId": 5,
+    "link": "Lorem ipsum dolor si5",
+    "title": "Lorem ipsum dolor si5",
+    "bannerImageId": 265206999
+  },
+  {
+    "image": "69",
+    "bannerId": 6,
+    "sortOrder": 6,
+    "languageId": 6,
+    "link": "Lorem ipsum dolor si6",
+    "title": "Lorem ipsum dolor si6",
+    "bannerImageId": 1517312413
+  },
+  {
+    "image": "54",
+    "bannerId": 7,
+    "sortOrder": 7,
+    "languageId": 7,
+    "link": "Lorem ipsum dolor si7",
+    "title": "Lorem ipsum dolor si7",
+    "bannerImageId": 1528273142
+  },
+  {
+    "image": "62",
+    "bannerId": 8,
+    "sortOrder": 8,
+    "languageId": 8,
+    "link": "Lorem ipsum dolor si8",
+    "title": "Lorem ipsum dolor si8",
+    "bannerImageId": 621263131
+  },
+  {
+    "image": "75",
+    "bannerId": 9,
+    "sortOrder": 9,
+    "languageId": 9,
+    "link": "Lorem ipsum dolor si9",
+    "title": "Lorem ipsum dolor si9",
+    "bannerImageId": 535051391
+  }
+]

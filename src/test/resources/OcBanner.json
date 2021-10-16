@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lyndsey",
+    "status": true,
+    "bannerId": 1557642573
+  },
+  {
+    "name": "Alexandra",
+    "status": false,
+    "bannerId": 135128514
+  },
+  {
+    "name": "Olivette",
+    "status": true,
+    "bannerId": 1589108057
+  },
+  {
+    "name": "Elinor",
+    "status": true,
+    "bannerId": 323478041
+  },
+  {
+    "name": "Modestia",
+    "status": true,
+    "bannerId": 497971452
+  },
+  {
+    "name": "Cornie",
+    "status": false,
+    "bannerId": 1287802545
+  },
+  {
+    "name": "Trista",
+    "status": true,
+    "bannerId": 620594431
+  },
+  {
+    "name": "Anthea",
+    "status": false,
+    "bannerId": 1904541069
+  },
+  {
+    "name": "Gianna",
+    "status": false,
+    "bannerId": 69276889
+  },
+  {
+    "name": "Hildagarde",
+    "status": false,
+    "bannerId": 1466786084
+  }
+]

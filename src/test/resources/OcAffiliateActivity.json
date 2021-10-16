@@ -1,0 +1,82 @@
+[
+  {
+    "data": "Lorem ipsum dolor si0",
+    "ip": "220-11-148-31",
+    "affiliateId": 0,
+    "key": "Lorem ipsum dolor si0",
+    "dateAdded": "2042-10-16T01:27:05.000-0700",
+    "affiliateActivityId": 1508054542
+  },
+  {
+    "data": "Lorem ipsum dolor si1",
+    "ip": "21-243-95-253",
+    "affiliateId": 1,
+    "key": "Lorem ipsum dolor si1",
+    "dateAdded": "2019-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 144318543
+  },
+  {
+    "data": "Lorem ipsum dolor si2",
+    "ip": "170-152-217-56",
+    "affiliateId": 2,
+    "key": "Lorem ipsum dolor si2",
+    "dateAdded": "2048-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 896425997
+  },
+  {
+    "data": "Lorem ipsum dolor si3",
+    "ip": "206-35-87-106",
+    "affiliateId": 3,
+    "key": "Lorem ipsum dolor si3",
+    "dateAdded": "1956-10-16T00:27:07.000-0800",
+    "affiliateActivityId": 529352589
+  },
+  {
+    "data": "Lorem ipsum dolor si4",
+    "ip": "66-130-183-154",
+    "affiliateId": 4,
+    "key": "Lorem ipsum dolor si4",
+    "dateAdded": "2048-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 1058037115
+  },
+  {
+    "data": "Lorem ipsum dolor si5",
+    "ip": "94-48-158-28",
+    "affiliateId": 5,
+    "key": "Lorem ipsum dolor si5",
+    "dateAdded": "1906-10-16T00:27:07.000-0800",
+    "affiliateActivityId": 842973808
+  },
+  {
+    "data": "Lorem ipsum dolor si6",
+    "ip": "79-56-167-173",
+    "affiliateId": 6,
+    "key": "Lorem ipsum dolor si6",
+    "dateAdded": "2049-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 898870034
+  },
+  {
+    "data": "Lorem ipsum dolor si7",
+    "ip": "222-81-39-226",
+    "affiliateId": 7,
+    "key": "Lorem ipsum dolor si7",
+    "dateAdded": "2072-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 425510851
+  },
+  {
+    "data": "Lorem ipsum dolor si8",
+    "ip": "111-20-214-216",
+    "affiliateId": 8,
+    "key": "Lorem ipsum dolor si8",
+    "dateAdded": "1986-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 935300322
+  },
+  {
+    "data": "Lorem ipsum dolor si9",
+    "ip": "42-217-163-240",
+    "affiliateId": 9,
+    "key": "Lorem ipsum dolor si9",
+    "dateAdded": "2019-10-16T01:27:07.000-0700",
+    "affiliateActivityId": 977393938
+  }
+]

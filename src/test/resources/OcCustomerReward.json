@@ -1,0 +1,82 @@
+[
+  {
+    "orderId": 0,
+    "customerId": 0,
+    "description": "Lorem ipsum dolor si0",
+    "dateAdded": "2083-10-16T01:27:05.000-0700",
+    "points": 0,
+    "customerRewardId": 1349104381
+  },
+  {
+    "orderId": 1,
+    "customerId": 1,
+    "description": "Lorem ipsum dolor si1",
+    "dateAdded": "1964-10-16T01:27:07.000-0700",
+    "points": 1,
+    "customerRewardId": 210834376
+  },
+  {
+    "orderId": 2,
+    "customerId": 2,
+    "description": "Lorem ipsum dolor si2",
+    "dateAdded": "1907-10-16T00:27:07.000-0800",
+    "points": 2,
+    "customerRewardId": 1387516395
+  },
+  {
+    "orderId": 3,
+    "customerId": 3,
+    "description": "Lorem ipsum dolor si3",
+    "dateAdded": "2049-10-16T01:27:07.000-0700",
+    "points": 3,
+    "customerRewardId": 35740534
+  },
+  {
+    "orderId": 4,
+    "customerId": 4,
+    "description": "Lorem ipsum dolor si4",
+    "dateAdded": "2061-10-16T01:27:07.000-0700",
+    "points": 4,
+    "customerRewardId": 294762012
+  },
+  {
+    "orderId": 5,
+    "customerId": 5,
+    "description": "Lorem ipsum dolor si5",
+    "dateAdded": "1997-10-16T01:27:07.000-0700",
+    "points": 5,
+    "customerRewardId": 542791187
+  },
+  {
+    "orderId": 6,
+    "customerId": 6,
+    "description": "Lorem ipsum dolor si6",
+    "dateAdded": "2023-10-16T01:27:07.000-0700",
+    "points": 6,
+    "customerRewardId": 65405937
+  },
+  {
+    "orderId": 7,
+    "customerId": 7,
+    "description": "Lorem ipsum dolor si7",
+    "dateAdded": "2069-10-16T01:27:07.000-0700",
+    "points": 7,
+    "customerRewardId": 2077459497
+  },
+  {
+    "orderId": 8,
+    "customerId": 8,
+    "description": "Lorem ipsum dolor si8",
+    "dateAdded": "2002-10-16T01:27:07.000-0700",
+    "points": 8,
+    "customerRewardId": 1041421957
+  },
+  {
+    "orderId": 9,
+    "customerId": 9,
+    "description": "Lorem ipsum dolor si9",
+    "dateAdded": "1928-10-16T00:27:07.000-0800",
+    "points": 9,
+    "customerRewardId": 1878082364
+  }
+]

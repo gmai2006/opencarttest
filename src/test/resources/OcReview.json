@@ -1,0 +1,112 @@
+[
+  {
+    "productId": 0,
+    "author": "Lorem ipsum dolor si0",
+    "customerId": 0,
+    "rating": 0,
+    "dateModified": "1947-10-16T00:27:06.000-0800",
+    "text": "Lorem ipsum dolor si0",
+    "dateAdded": "2014-10-16T01:27:06.000-0700",
+    "status": true,
+    "reviewId": 1920928464
+  },
+  {
+    "productId": 1,
+    "author": "Lorem ipsum dolor si1",
+    "customerId": 1,
+    "rating": 1,
+    "dateModified": "1904-10-16T00:27:08.000-0800",
+    "text": "Lorem ipsum dolor si1",
+    "dateAdded": "2033-10-16T01:27:08.000-0700",
+    "status": false,
+    "reviewId": 932041640
+  },
+  {
+    "productId": 2,
+    "author": "Lorem ipsum dolor si2",
+    "customerId": 2,
+    "rating": 2,
+    "dateModified": "1965-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si2",
+    "dateAdded": "2003-10-16T01:27:08.000-0700",
+    "status": false,
+    "reviewId": 696419668
+  },
+  {
+    "productId": 3,
+    "author": "Lorem ipsum dolor si3",
+    "customerId": 3,
+    "rating": 3,
+    "dateModified": "1983-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si3",
+    "dateAdded": "1947-10-16T00:27:08.000-0800",
+    "status": false,
+    "reviewId": 1387148960
+  },
+  {
+    "productId": 4,
+    "author": "Lorem ipsum dolor si4",
+    "customerId": 4,
+    "rating": 4,
+    "dateModified": "2030-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si4",
+    "dateAdded": "1987-10-16T01:27:08.000-0700",
+    "status": false,
+    "reviewId": 1390801724
+  },
+  {
+    "productId": 5,
+    "author": "Lorem ipsum dolor si5",
+    "customerId": 5,
+    "rating": 5,
+    "dateModified": "2080-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si5",
+    "dateAdded": "1918-10-16T01:27:08.000-0700",
+    "status": true,
+    "reviewId": 1617179156
+  },
+  {
+    "productId": 6,
+    "author": "Lorem ipsum dolor si6",
+    "customerId": 6,
+    "rating": 6,
+    "dateModified": "2070-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si6",
+    "dateAdded": "1983-10-16T01:27:08.000-0700",
+    "status": false,
+    "reviewId": 1848409287
+  },
+  {
+    "productId": 7,
+    "author": "Lorem ipsum dolor si7",
+    "customerId": 7,
+    "rating": 7,
+    "dateModified": "1972-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si7",
+    "dateAdded": "1995-10-16T01:27:08.000-0700",
+    "status": true,
+    "reviewId": 618393545
+  },
+  {
+    "productId": 8,
+    "author": "Lorem ipsum dolor si8",
+    "customerId": 8,
+    "rating": 8,
+    "dateModified": "2085-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si8",
+    "dateAdded": "2086-10-16T01:27:08.000-0700",
+    "status": true,
+    "reviewId": 402965625
+  },
+  {
+    "productId": 9,
+    "author": "Lorem ipsum dolor si9",
+    "customerId": 9,
+    "rating": 9,
+    "dateModified": "2011-10-16T01:27:08.000-0700",
+    "text": "Lorem ipsum dolor si9",
+    "dateAdded": "2020-10-16T01:27:08.000-0700",
+    "status": false,
+    "reviewId": 1105530692
+  }
+]

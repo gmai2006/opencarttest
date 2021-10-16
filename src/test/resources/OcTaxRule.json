@@ -1,0 +1,72 @@
+[
+  {
+    "based": "Lorem ips0",
+    "taxClassId": 0,
+    "taxRateId": 0,
+    "priority": 0,
+    "taxRuleId": 1063006567
+  },
+  {
+    "based": "Lorem ips1",
+    "taxClassId": 1,
+    "taxRateId": 1,
+    "priority": 1,
+    "taxRuleId": 922515921
+  },
+  {
+    "based": "Lorem ips2",
+    "taxClassId": 2,
+    "taxRateId": 2,
+    "priority": 2,
+    "taxRuleId": 119434830
+  },
+  {
+    "based": "Lorem ips3",
+    "taxClassId": 3,
+    "taxRateId": 3,
+    "priority": 3,
+    "taxRuleId": 1656629422
+  },
+  {
+    "based": "Lorem ips4",
+    "taxClassId": 4,
+    "taxRateId": 4,
+    "priority": 4,
+    "taxRuleId": 723689323
+  },
+  {
+    "based": "Lorem ips5",
+    "taxClassId": 5,
+    "taxRateId": 5,
+    "priority": 5,
+    "taxRuleId": 555760159
+  },
+  {
+    "based": "Lorem ips6",
+    "taxClassId": 6,
+    "taxRateId": 6,
+    "priority": 6,
+    "taxRuleId": 572111920
+  },
+  {
+    "based": "Lorem ips7",
+    "taxClassId": 7,
+    "taxRateId": 7,
+    "priority": 7,
+    "taxRuleId": 1574195221
+  },
+  {
+    "based": "Lorem ips8",
+    "taxClassId": 8,
+    "taxRateId": 8,
+    "priority": 8,
+    "taxRuleId": 1079437047
+  },
+  {
+    "based": "Lorem ips9",
+    "taxClassId": 9,
+    "taxRateId": 9,
+    "priority": 9,
+    "taxRuleId": 1790246377
+  }
+]

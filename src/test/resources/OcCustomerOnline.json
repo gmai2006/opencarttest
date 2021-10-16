@@ -1,0 +1,72 @@
+[
+  {
+    "referer": "Lorem ipsum dolor si0",
+    "customerId": 0,
+    "url": "Lorem ipsum dolor si0",
+    "dateAdded": "1915-10-16T00:27:05.000-0800",
+    "ip": "ed428d84-04c9-4385-9357-5133a264add9"
+  },
+  {
+    "referer": "Lorem ipsum dolor si1",
+    "customerId": 1,
+    "url": "Lorem ipsum dolor si1",
+    "dateAdded": "1991-10-16T01:27:07.000-0700",
+    "ip": "80f00221-d9cc-4773-a4d5-dde98e4e30ed"
+  },
+  {
+    "referer": "Lorem ipsum dolor si2",
+    "customerId": 2,
+    "url": "Lorem ipsum dolor si2",
+    "dateAdded": "2009-10-16T01:27:07.000-0700",
+    "ip": "366511ea-aeac-4332-84c3-162402ce4239"
+  },
+  {
+    "referer": "Lorem ipsum dolor si3",
+    "customerId": 3,
+    "url": "Lorem ipsum dolor si3",
+    "dateAdded": "1974-10-16T01:27:07.000-0700",
+    "ip": "6567a880-523d-48b7-8550-a5524cde3ba1"
+  },
+  {
+    "referer": "Lorem ipsum dolor si4",
+    "customerId": 4,
+    "url": "Lorem ipsum dolor si4",
+    "dateAdded": "2097-10-16T01:27:07.000-0700",
+    "ip": "4336adef-b51b-41bd-be5f-28197b3178f0"
+  },
+  {
+    "referer": "Lorem ipsum dolor si5",
+    "customerId": 5,
+    "url": "Lorem ipsum dolor si5",
+    "dateAdded": "1983-10-16T01:27:07.000-0700",
+    "ip": "02c16655-668c-4632-aec7-e0b825fbb2f4"
+  },
+  {
+    "referer": "Lorem ipsum dolor si6",
+    "customerId": 6,
+    "url": "Lorem ipsum dolor si6",
+    "dateAdded": "1945-10-16T00:27:07.000-0800",
+    "ip": "5c1e6e8c-c53c-410a-9ef2-262ec52c50a1"
+  },
+  {
+    "referer": "Lorem ipsum dolor si7",
+    "customerId": 7,
+    "url": "Lorem ipsum dolor si7",
+    "dateAdded": "2045-10-16T01:27:07.000-0700",
+    "ip": "8213938d-144b-4a65-bd65-000f058133ec"
+  },
+  {
+    "referer": "Lorem ipsum dolor si8",
+    "customerId": 8,
+    "url": "Lorem ipsum dolor si8",
+    "dateAdded": "2068-10-16T01:27:07.000-0700",
+    "ip": "c2ed9635-98a9-46ac-ae0b-27397e5a6824"
+  },
+  {
+    "referer": "Lorem ipsum dolor si9",
+    "customerId": 9,
+    "url": "Lorem ipsum dolor si9",
+    "dateAdded": "2075-10-16T01:27:07.000-0700",
+    "ip": "f48c0fd4-6b9d-4741-9519-29e09228aca0"
+  }
+]

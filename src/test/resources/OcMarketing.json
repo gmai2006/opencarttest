@@ -1,0 +1,82 @@
+[
+  {
+    "code": "Lorem ipsum dolor si0",
+    "name": "Olivette",
+    "description": "Lorem ipsum dolor si0",
+    "clicks": 0,
+    "dateAdded": "2022-10-16T01:27:06.000-0700",
+    "marketingId": 1449519423
+  },
+  {
+    "code": "Lorem ipsum dolor si1",
+    "name": "Zondra",
+    "description": "Lorem ipsum dolor si1",
+    "clicks": 1,
+    "dateAdded": "1950-10-16T00:27:07.000-0800",
+    "marketingId": 730305588
+  },
+  {
+    "code": "Lorem ipsum dolor si2",
+    "name": "Dana",
+    "description": "Lorem ipsum dolor si2",
+    "clicks": 2,
+    "dateAdded": "1950-10-16T00:27:07.000-0800",
+    "marketingId": 1303750157
+  },
+  {
+    "code": "Lorem ipsum dolor si3",
+    "name": "Anderea",
+    "description": "Lorem ipsum dolor si3",
+    "clicks": 3,
+    "dateAdded": "1967-10-16T01:27:07.000-0700",
+    "marketingId": 1107721156
+  },
+  {
+    "code": "Lorem ipsum dolor si4",
+    "name": "Penelopa",
+    "description": "Lorem ipsum dolor si4",
+    "clicks": 4,
+    "dateAdded": "1975-10-16T01:27:07.000-0700",
+    "marketingId": 1853316242
+  },
+  {
+    "code": "Lorem ipsum dolor si5",
+    "name": "Ebony",
+    "description": "Lorem ipsum dolor si5",
+    "clicks": 5,
+    "dateAdded": "1989-10-16T01:27:07.000-0700",
+    "marketingId": 188286415
+  },
+  {
+    "code": "Lorem ipsum dolor si6",
+    "name": "Clementina",
+    "description": "Lorem ipsum dolor si6",
+    "clicks": 6,
+    "dateAdded": "1935-10-16T00:27:07.000-0800",
+    "marketingId": 1649275867
+  },
+  {
+    "code": "Lorem ipsum dolor si7",
+    "name": "Ashlen",
+    "description": "Lorem ipsum dolor si7",
+    "clicks": 7,
+    "dateAdded": "1918-10-16T01:27:07.000-0700",
+    "marketingId": 1984258677
+  },
+  {
+    "code": "Lorem ipsum dolor si8",
+    "name": "Adella",
+    "description": "Lorem ipsum dolor si8",
+    "clicks": 8,
+    "dateAdded": "2066-10-16T01:27:07.000-0700",
+    "marketingId": 1081052840
+  },
+  {
+    "code": "Lorem ipsum dolor si9",
+    "name": "Nicola",
+    "description": "Lorem ipsum dolor si9",
+    "clicks": 9,
+    "dateAdded": "2032-10-16T01:27:07.000-0700",
+    "marketingId": 930399657
+  }
+]

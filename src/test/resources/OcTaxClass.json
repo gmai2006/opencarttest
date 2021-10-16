@@ -1,0 +1,72 @@
+[
+  {
+    "description": "Lorem ipsum dolor si0",
+    "dateModified": "1915-10-16T00:27:06.000-0800",
+    "title": "Lorem ipsum dolor si0",
+    "dateAdded": "1956-10-16T00:27:06.000-0800",
+    "taxClassId": 1989425012
+  },
+  {
+    "description": "Lorem ipsum dolor si1",
+    "dateModified": "2022-10-16T01:27:08.000-0700",
+    "title": "Lorem ipsum dolor si1",
+    "dateAdded": "1911-10-16T00:27:08.000-0800",
+    "taxClassId": 1315064019
+  },
+  {
+    "description": "Lorem ipsum dolor si2",
+    "dateModified": "1968-10-16T01:27:08.000-0700",
+    "title": "Lorem ipsum dolor si2",
+    "dateAdded": "2033-10-16T01:27:08.000-0700",
+    "taxClassId": 365941194
+  },
+  {
+    "description": "Lorem ipsum dolor si3",
+    "dateModified": "2028-10-16T01:27:08.000-0700",
+    "title": "Lorem ipsum dolor si3",
+    "dateAdded": "1934-10-16T00:27:08.000-0800",
+    "taxClassId": 1729809940
+  },
+  {
+    "description": "Lorem ipsum dolor si4",
+    "dateModified": "2044-10-16T01:27:08.000-0700",
+    "title": "Lorem ipsum dolor si4",
+    "dateAdded": "1919-10-16T00:27:08.000-0800",
+    "taxClassId": 102739686
+  },
+  {
+    "description": "Lorem ipsum dolor si5",
+    "dateModified": "1947-10-16T00:27:08.000-0800",
+    "title": "Lorem ipsum dolor si5",
+    "dateAdded": "1906-10-16T00:27:08.000-0800",
+    "taxClassId": 2142292003
+  },
+  {
+    "description": "Lorem ipsum dolor si6",
+    "dateModified": "1981-10-16T01:27:08.000-0700",
+    "title": "Lorem ipsum dolor si6",
+    "dateAdded": "1920-10-16T00:27:08.000-0800",
+    "taxClassId": 485095093
+  },
+  {
+    "description": "Lorem ipsum dolor si7",
+    "dateModified": "1905-10-16T00:27:08.000-0800",
+    "title": "Lorem ipsum dolor si7",
+    "dateAdded": "2058-10-16T01:27:08.000-0700",
+    "taxClassId": 1090966360
+  },
+  {
+    "description": "Lorem ipsum dolor si8",
+    "dateModified": "2011-10-16T01:27:08.000-0700",
+    "title": "Lorem ipsum dolor si8",
+    "dateAdded": "2094-10-16T01:27:08.000-0700",
+    "taxClassId": 1616176289
+  },
+  {
+    "description": "Lorem ipsum dolor si9",
+    "dateModified": "1961-10-16T00:27:08.000-0800",
+    "title": "Lorem ipsum dolor si9",
+    "dateAdded": "1999-10-16T01:27:08.000-0700",
+    "taxClassId": 512672175
+  }
+]

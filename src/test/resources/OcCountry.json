@@ -1,0 +1,92 @@
+[
+  {
+    "postcodeRequired": true,
+    "isoCode2": "L0",
+    "isoCode3": "Lo0",
+    "addressFormat": "Lorem ipsum dolor si0",
+    "name": "Celeste",
+    "status": false,
+    "countryId": 767520818
+  },
+  {
+    "postcodeRequired": false,
+    "isoCode2": "L1",
+    "isoCode3": "Lo1",
+    "addressFormat": "Lorem ipsum dolor si1",
+    "name": "Dina",
+    "status": false,
+    "countryId": 1867631892
+  },
+  {
+    "postcodeRequired": true,
+    "isoCode2": "L2",
+    "isoCode3": "Lo2",
+    "addressFormat": "Lorem ipsum dolor si2",
+    "name": "Nelle",
+    "status": true,
+    "countryId": 104087366
+  },
+  {
+    "postcodeRequired": true,
+    "isoCode2": "L3",
+    "isoCode3": "Lo3",
+    "addressFormat": "Lorem ipsum dolor si3",
+    "name": "Nanice",
+    "status": false,
+    "countryId": 676822483
+  },
+  {
+    "postcodeRequired": false,
+    "isoCode2": "L4",
+    "isoCode3": "Lo4",
+    "addressFormat": "Lorem ipsum dolor si4",
+    "name": "Kata",
+    "status": true,
+    "countryId": 188764137
+  },
+  {
+    "postcodeRequired": true,
+    "isoCode2": "L5",
+    "isoCode3": "Lo5",
+    "addressFormat": "Lorem ipsum dolor si5",
+    "name": "Juli",
+    "status": true,
+    "countryId": 272290146
+  },
+  {
+    "postcodeRequired": true,
+    "isoCode2": "L6",
+    "isoCode3": "Lo6",
+    "addressFormat": "Lorem ipsum dolor si6",
+    "name": "Sheeree",
+    "status": true,
+    "countryId": 269671876
+  },
+  {
+    "postcodeRequired": true,
+    "isoCode2": "L7",
+    "isoCode3": "Lo7",
+    "addressFormat": "Lorem ipsum dolor si7",
+    "name": "Isahella",
+    "status": false,
+    "countryId": 1371262931
+  },
+  {
+    "postcodeRequired": false,
+    "isoCode2": "L8",
+    "isoCode3": "Lo8",
+    "addressFormat": "Lorem ipsum dolor si8",
+    "name": "Andy",
+    "status": false,
+    "countryId": 275261523
+  },
+  {
+    "postcodeRequired": false,
+    "isoCode2": "L9",
+    "isoCode3": "Lo9",
+    "addressFormat": "Lorem ipsum dolor si9",
+    "name": "Sonnnie",
+    "status": false,
+    "countryId": 282863101
+  }
+]

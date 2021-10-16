@@ -1,0 +1,92 @@
+[
+  {
+    "rate": 0,
+    "name": "Mathilde",
+    "dateModified": "1931-10-16T00:27:06.000-0800",
+    "type": "0",
+    "geoZoneId": 0,
+    "dateAdded": "1913-10-16T00:27:06.000-0800",
+    "taxRateId": 384552221
+  },
+  {
+    "rate": 1,
+    "name": "Irene",
+    "dateModified": "1982-10-16T01:27:08.000-0700",
+    "type": "1",
+    "geoZoneId": 1,
+    "dateAdded": "2001-10-16T01:27:08.000-0700",
+    "taxRateId": 1834802764
+  },
+  {
+    "rate": 2,
+    "name": "Corina",
+    "dateModified": "2042-10-16T01:27:08.000-0700",
+    "type": "2",
+    "geoZoneId": 2,
+    "dateAdded": "2065-10-16T01:27:08.000-0700",
+    "taxRateId": 1802929750
+  },
+  {
+    "rate": 3,
+    "name": "Jeanine",
+    "dateModified": "1963-10-16T01:27:08.000-0700",
+    "type": "3",
+    "geoZoneId": 3,
+    "dateAdded": "2059-10-16T01:27:08.000-0700",
+    "taxRateId": 423326873
+  },
+  {
+    "rate": 4,
+    "name": "Jaynell",
+    "dateModified": "2000-10-16T01:27:08.000-0700",
+    "type": "4",
+    "geoZoneId": 4,
+    "dateAdded": "2007-10-16T01:27:08.000-0700",
+    "taxRateId": 2089179072
+  },
+  {
+    "rate": 5,
+    "name": "Wilie",
+    "dateModified": "1995-10-16T01:27:08.000-0700",
+    "type": "5",
+    "geoZoneId": 5,
+    "dateAdded": "1939-10-16T00:27:08.000-0800",
+    "taxRateId": 1444364242
+  },
+  {
+    "rate": 6,
+    "name": "Wendye",
+    "dateModified": "1954-10-16T00:27:08.000-0800",
+    "type": "6",
+    "geoZoneId": 6,
+    "dateAdded": "1935-10-16T00:27:08.000-0800",
+    "taxRateId": 1476363449
+  },
+  {
+    "rate": 7,
+    "name": "Dorothee",
+    "dateModified": "1942-10-16T01:27:08.000-0700",
+    "type": "7",
+    "geoZoneId": 7,
+    "dateAdded": "2057-10-16T01:27:08.000-0700",
+    "taxRateId": 647285852
+  },
+  {
+    "rate": 8,
+    "name": "Malia",
+    "dateModified": "2086-10-16T01:27:08.000-0700",
+    "type": "8",
+    "geoZoneId": 8,
+    "dateAdded": "1933-10-16T00:27:08.000-0800",
+    "taxRateId": 1400016905
+  },
+  {
+    "rate": 9,
+    "name": "Tine",
+    "dateModified": "1941-10-16T00:27:08.000-0800",
+    "type": "9",
+    "geoZoneId": 9,
+    "dateAdded": "1977-10-16T01:27:08.000-0700",
+    "taxRateId": 1766614498
+  }
+]

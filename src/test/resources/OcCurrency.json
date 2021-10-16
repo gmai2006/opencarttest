@@ -1,0 +1,112 @@
+[
+  {
+    "code": "Lo0",
+    "symbolLeft": "Lorem ipsum0",
+    "symbolRight": "Lorem ipsum0",
+    "dateModified": "2099-10-16T01:27:05.000-0700",
+    "title": "Lorem ipsum dolor si0",
+    "value": 0.0,
+    "decimalPlace": "0",
+    "status": false,
+    "currencyId": 2130317225
+  },
+  {
+    "code": "Lo1",
+    "symbolLeft": "Lorem ipsum1",
+    "symbolRight": "Lorem ipsum1",
+    "dateModified": "2024-10-16T01:27:07.000-0700",
+    "title": "Lorem ipsum dolor si1",
+    "value": 1.0,
+    "decimalPlace": "1",
+    "status": false,
+    "currencyId": 1802413418
+  },
+  {
+    "code": "Lo2",
+    "symbolLeft": "Lorem ipsum2",
+    "symbolRight": "Lorem ipsum2",
+    "dateModified": "1975-10-16T01:27:07.000-0700",
+    "title": "Lorem ipsum dolor si2",
+    "value": 2.0,
+    "decimalPlace": "2",
+    "status": false,
+    "currencyId": 1142667499
+  },
+  {
+    "code": "Lo3",
+    "symbolLeft": "Lorem ipsum3",
+    "symbolRight": "Lorem ipsum3",
+    "dateModified": "1909-10-16T00:27:07.000-0800",
+    "title": "Lorem ipsum dolor si3",
+    "value": 3.0,
+    "decimalPlace": "3",
+    "status": false,
+    "currencyId": 687722663
+  },
+  {
+    "code": "Lo4",
+    "symbolLeft": "Lorem ipsum4",
+    "symbolRight": "Lorem ipsum4",
+    "dateModified": "1940-10-16T00:27:07.000-0800",
+    "title": "Lorem ipsum dolor si4",
+    "value": 4.0,
+    "decimalPlace": "4",
+    "status": false,
+    "currencyId": 1881757599
+  },
+  {
+    "code": "Lo5",
+    "symbolLeft": "Lorem ipsum5",
+    "symbolRight": "Lorem ipsum5",
+    "dateModified": "2064-10-16T01:27:07.000-0700",
+    "title": "Lorem ipsum dolor si5",
+    "value": 5.0,
+    "decimalPlace": "5",
+    "status": false,
+    "currencyId": 1865576310
+  },
+  {
+    "code": "Lo6",
+    "symbolLeft": "Lorem ipsum6",
+    "symbolRight": "Lorem ipsum6",
+    "dateModified": "2028-10-16T01:27:07.000-0700",
+    "title": "Lorem ipsum dolor si6",
+    "value": 6.0,
+    "decimalPlace": "6",
+    "status": true,
+    "currencyId": 2095595212
+  },
+  {
+    "code": "Lo7",
+    "symbolLeft": "Lorem ipsum7",
+    "symbolRight": "Lorem ipsum7",
+    "dateModified": "1953-10-16T00:27:07.000-0800",
+    "title": "Lorem ipsum dolor si7",
+    "value": 7.0,
+    "decimalPlace": "7",
+    "status": false,
+    "currencyId": 636850431
+  },
+  {
+    "code": "Lo8",
+    "symbolLeft": "Lorem ipsum8",
+    "symbolRight": "Lorem ipsum8",
+    "dateModified": "1912-10-16T00:27:07.000-0800",
+    "title": "Lorem ipsum dolor si8",
+    "value": 8.0,
+    "decimalPlace": "8",
+    "status": true,
+    "currencyId": 938340040
+  },
+  {
+    "code": "Lo9",
+    "symbolLeft": "Lorem ipsum9",
+    "symbolRight": "Lorem ipsum9",
+    "dateModified": "2068-10-16T01:27:07.000-0700",
+    "title": "Lorem ipsum dolor si9",
+    "value": 9.0,
+    "decimalPlace": "9",
+    "status": false,
+    "currencyId": 1480648268
+  }
+]

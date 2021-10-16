@@ -1,0 +1,92 @@
+[
+  {
+    "customerGroupId": 0,
+    "productId": 0,
+    "dateStart": "1919-10-16",
+    "price": 0,
+    "dateEnd": "2058-10-16",
+    "priority": 0,
+    "productSpecialId": 300912393
+  },
+  {
+    "customerGroupId": 1,
+    "productId": 1,
+    "dateStart": "1927-10-16",
+    "price": 1,
+    "dateEnd": "1938-10-16",
+    "priority": 1,
+    "productSpecialId": 1946464270
+  },
+  {
+    "customerGroupId": 2,
+    "productId": 2,
+    "dateStart": "2066-10-16",
+    "price": 2,
+    "dateEnd": "1914-10-16",
+    "priority": 2,
+    "productSpecialId": 1550577193
+  },
+  {
+    "customerGroupId": 3,
+    "productId": 3,
+    "dateStart": "1906-10-16",
+    "price": 3,
+    "dateEnd": "2086-10-16",
+    "priority": 3,
+    "productSpecialId": 1139952032
+  },
+  {
+    "customerGroupId": 4,
+    "productId": 4,
+    "dateStart": "1980-10-16",
+    "price": 4,
+    "dateEnd": "1932-10-16",
+    "priority": 4,
+    "productSpecialId": 720014590
+  },
+  {
+    "customerGroupId": 5,
+    "productId": 5,
+    "dateStart": "2094-10-16",
+    "price": 5,
+    "dateEnd": "1999-10-16",
+    "priority": 5,
+    "productSpecialId": 1997919770
+  },
+  {
+    "customerGroupId": 6,
+    "productId": 6,
+    "dateStart": "2079-10-16",
+    "price": 6,
+    "dateEnd": "1942-10-16",
+    "priority": 6,
+    "productSpecialId": 260483194
+  },
+  {
+    "customerGroupId": 7,
+    "productId": 7,
+    "dateStart": "1987-10-16",
+    "price": 7,
+    "dateEnd": "2051-10-16",
+    "priority": 7,
+    "productSpecialId": 819590619
+  },
+  {
+    "customerGroupId": 8,
+    "productId": 8,
+    "dateStart": "1931-10-16",
+    "price": 8,
+    "dateEnd": "1952-10-16",
+    "priority": 8,
+    "productSpecialId": 145515381
+  },
+  {
+    "customerGroupId": 9,
+    "productId": 9,
+    "dateStart": "1918-10-16",
+    "price": 9,
+    "dateEnd": "1954-10-16",
+    "priority": 9,
+    "productSpecialId": 1881059418
+  }
+]

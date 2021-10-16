@@ -1,0 +1,92 @@
+[
+  {
+    "sortOrder": 0,
+    "location": "Lorem 0",
+    "type": "Lorem ipsum dolor si0",
+    "value": "Lorem ipsum dolor si0",
+    "validation": "Lorem ipsum dolor si0",
+    "status": false,
+    "customFieldId": 205428722
+  },
+  {
+    "sortOrder": 1,
+    "location": "Lorem 1",
+    "type": "Lorem ipsum dolor si1",
+    "value": "Lorem ipsum dolor si1",
+    "validation": "Lorem ipsum dolor si1",
+    "status": false,
+    "customFieldId": 1587621198
+  },
+  {
+    "sortOrder": 2,
+    "location": "Lorem 2",
+    "type": "Lorem ipsum dolor si2",
+    "value": "Lorem ipsum dolor si2",
+    "validation": "Lorem ipsum dolor si2",
+    "status": true,
+    "customFieldId": 1478863196
+  },
+  {
+    "sortOrder": 3,
+    "location": "Lorem 3",
+    "type": "Lorem ipsum dolor si3",
+    "value": "Lorem ipsum dolor si3",
+    "validation": "Lorem ipsum dolor si3",
+    "status": true,
+    "customFieldId": 2027257830
+  },
+  {
+    "sortOrder": 4,
+    "location": "Lorem 4",
+    "type": "Lorem ipsum dolor si4",
+    "value": "Lorem ipsum dolor si4",
+    "validation": "Lorem ipsum dolor si4",
+    "status": true,
+    "customFieldId": 1209639766
+  },
+  {
+    "sortOrder": 5,
+    "location": "Lorem 5",
+    "type": "Lorem ipsum dolor si5",
+    "value": "Lorem ipsum dolor si5",
+    "validation": "Lorem ipsum dolor si5",
+    "status": false,
+    "customFieldId": 643869282
+  },
+  {
+    "sortOrder": 6,
+    "location": "Lorem 6",
+    "type": "Lorem ipsum dolor si6",
+    "value": "Lorem ipsum dolor si6",
+    "validation": "Lorem ipsum dolor si6",
+    "status": true,
+    "customFieldId": 486089691
+  },
+  {
+    "sortOrder": 7,
+    "location": "Lorem 7",
+    "type": "Lorem ipsum dolor si7",
+    "value": "Lorem ipsum dolor si7",
+    "validation": "Lorem ipsum dolor si7",
+    "status": true,
+    "customFieldId": 1817334660
+  },
+  {
+    "sortOrder": 8,
+    "location": "Lorem 8",
+    "type": "Lorem ipsum dolor si8",
+    "value": "Lorem ipsum dolor si8",
+    "validation": "Lorem ipsum dolor si8",
+    "status": true,
+    "customFieldId": 453499764
+  },
+  {
+    "sortOrder": 9,
+    "location": "Lorem 9",
+    "type": "Lorem ipsum dolor si9",
+    "value": "Lorem ipsum dolor si9",
+    "validation": "Lorem ipsum dolor si9",
+    "status": false,
+    "customFieldId": 362156477
+  }
+]

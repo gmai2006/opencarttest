@@ -1,0 +1,82 @@
+[
+  {
+    "amount": 0,
+    "orderId": 0,
+    "customerId": 0,
+    "couponId": 0,
+    "dateAdded": "2055-10-16T01:27:05.000-0700",
+    "couponHistoryId": 1346042386
+  },
+  {
+    "amount": 1,
+    "orderId": 1,
+    "customerId": 1,
+    "couponId": 1,
+    "dateAdded": "2060-10-16T01:27:07.000-0700",
+    "couponHistoryId": 1373667180
+  },
+  {
+    "amount": 2,
+    "orderId": 2,
+    "customerId": 2,
+    "couponId": 2,
+    "dateAdded": "2065-10-16T01:27:07.000-0700",
+    "couponHistoryId": 905810988
+  },
+  {
+    "amount": 3,
+    "orderId": 3,
+    "customerId": 3,
+    "couponId": 3,
+    "dateAdded": "1976-10-16T01:27:07.000-0700",
+    "couponHistoryId": 30034357
+  },
+  {
+    "amount": 4,
+    "orderId": 4,
+    "customerId": 4,
+    "couponId": 4,
+    "dateAdded": "2039-10-16T01:27:07.000-0700",
+    "couponHistoryId": 1955938451
+  },
+  {
+    "amount": 5,
+    "orderId": 5,
+    "customerId": 5,
+    "couponId": 5,
+    "dateAdded": "1984-10-16T01:27:07.000-0700",
+    "couponHistoryId": 724815495
+  },
+  {
+    "amount": 6,
+    "orderId": 6,
+    "customerId": 6,
+    "couponId": 6,
+    "dateAdded": "2082-10-16T01:27:07.000-0700",
+    "couponHistoryId": 85653950
+  },
+  {
+    "amount": 7,
+    "orderId": 7,
+    "customerId": 7,
+    "couponId": 7,
+    "dateAdded": "1962-10-16T01:27:07.000-0700",
+    "couponHistoryId": 778848491
+  },
+  {
+    "amount": 8,
+    "orderId": 8,
+    "customerId": 8,
+    "couponId": 8,
+    "dateAdded": "2030-10-16T01:27:07.000-0700",
+    "couponHistoryId": 1559357620
+  },
+  {
+    "amount": 9,
+    "orderId": 9,
+    "customerId": 9,
+    "couponId": 9,
+    "dateAdded": "2077-10-16T01:27:07.000-0700",
+    "couponHistoryId": 2144394983
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "required": false,
+    "customerGroupId": 713978750,
+    "customFieldId": 1304382545
+  },
+  {
+    "required": false,
+    "customerGroupId": 1488223183,
+    "customFieldId": 2108140331
+  },
+  {
+    "required": false,
+    "customerGroupId": 2090572597,
+    "customFieldId": 1246087991
+  },
+  {
+    "required": true,
+    "customerGroupId": 2090792396,
+    "customFieldId": 739912469
+  },
+  {
+    "required": true,
+    "customerGroupId": 1661996570,
+    "customFieldId": 399397153
+  },
+  {
+    "required": true,
+    "customerGroupId": 829498627,
+    "customFieldId": 1291209499
+  },
+  {
+    "required": false,
+    "customerGroupId": 1923610451,
+    "customFieldId": 2040835523
+  },
+  {
+    "required": false,
+    "customerGroupId": 1154282308,
+    "customFieldId": 810927763
+  },
+  {
+    "required": false,
+    "customerGroupId": 718187555,
+    "customFieldId": 2032788935
+  },
+  {
+    "required": true,
+    "customerGroupId": 17332465,
+    "customFieldId": 101113508
+  }
+]

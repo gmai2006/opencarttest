@@ -1,0 +1,82 @@
+[
+  {
+    "route": "Lorem ipsum dolor si0",
+    "languageId": 0,
+    "storeId": 0,
+    "value": "Lorem ipsum dolor si0",
+    "key": "Lorem ipsum dolor si0",
+    "translationId": 683165287
+  },
+  {
+    "route": "Lorem ipsum dolor si1",
+    "languageId": 1,
+    "storeId": 1,
+    "value": "Lorem ipsum dolor si1",
+    "key": "Lorem ipsum dolor si1",
+    "translationId": 914353551
+  },
+  {
+    "route": "Lorem ipsum dolor si2",
+    "languageId": 2,
+    "storeId": 2,
+    "value": "Lorem ipsum dolor si2",
+    "key": "Lorem ipsum dolor si2",
+    "translationId": 1017736519
+  },
+  {
+    "route": "Lorem ipsum dolor si3",
+    "languageId": 3,
+    "storeId": 3,
+    "value": "Lorem ipsum dolor si3",
+    "key": "Lorem ipsum dolor si3",
+    "translationId": 1933633254
+  },
+  {
+    "route": "Lorem ipsum dolor si4",
+    "languageId": 4,
+    "storeId": 4,
+    "value": "Lorem ipsum dolor si4",
+    "key": "Lorem ipsum dolor si4",
+    "translationId": 1323372114
+  },
+  {
+    "route": "Lorem ipsum dolor si5",
+    "languageId": 5,
+    "storeId": 5,
+    "value": "Lorem ipsum dolor si5",
+    "key": "Lorem ipsum dolor si5",
+    "translationId": 1671468724
+  },
+  {
+    "route": "Lorem ipsum dolor si6",
+    "languageId": 6,
+    "storeId": 6,
+    "value": "Lorem ipsum dolor si6",
+    "key": "Lorem ipsum dolor si6",
+    "translationId": 625300480
+  },
+  {
+    "route": "Lorem ipsum dolor si7",
+    "languageId": 7,
+    "storeId": 7,
+    "value": "Lorem ipsum dolor si7",
+    "key": "Lorem ipsum dolor si7",
+    "translationId": 1234045315
+  },
+  {
+    "route": "Lorem ipsum dolor si8",
+    "languageId": 8,
+    "storeId": 8,
+    "value": "Lorem ipsum dolor si8",
+    "key": "Lorem ipsum dolor si8",
+    "translationId": 296576714
+  },
+  {
+    "route": "Lorem ipsum dolor si9",
+    "languageId": 9,
+    "storeId": 9,
+    "value": "Lorem ipsum dolor si9",
+    "key": "Lorem ipsum dolor si9",
+    "translationId": 62864818
+  }
+]

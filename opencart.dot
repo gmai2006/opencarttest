@@ -1,0 +1,1912 @@
+digraph G {
+    graph [rankdir=TB]
+    node [shape=none, margin=0]
+    edge [arrowhead=crow, arrowtail=none, dir=both]
+    oc_address [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">address_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">address_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">company: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">address_1: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">address_2: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">city: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">postcode: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_affiliate [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">affiliate_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">affiliate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">telephone: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">fax: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">password: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">salt: VARCHAR(9) NOT NULL</td></tr> 
+            <tr><td align="left">company: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">website: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">address_1: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">address_2: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">city: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">postcode: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">commission: DECIMAL(4) NOT NULL</td></tr> 
+            <tr><td align="left">tax: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">payment: VARCHAR(6) NOT NULL</td></tr> 
+            <tr><td align="left">cheque: VARCHAR(100) NOT NULL</td></tr> 
+            <tr><td align="left">paypal: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">bank_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">bank_branch_number: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">bank_swift_code: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">bank_account_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">bank_account_number: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">approved: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_affiliate_activity [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">affiliate_activity_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">affiliate_activity_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">affiliate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">key: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">data: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_affiliate_login [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">affiliate_login_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">affiliate_login_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">total: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_affiliate_transaction [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">affiliate_transaction_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">affiliate_transaction_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">affiliate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_api [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">api_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">api_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">key: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_api_ip [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">api_ip_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">api_ip_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">api_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_api_session [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">api_session_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">api_session_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">api_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">token: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">session_id: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">session_name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_attribute [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">attribute_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">attribute_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">attribute_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_attribute_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">attribute_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">attribute_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_attribute_group [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">attribute_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">attribute_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_attribute_group_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">attribute_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">attribute_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_banner [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">banner_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">banner_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_banner_image [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">banner_image_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">banner_image_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">banner_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">link: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_cart [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">cart_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">cart_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">api_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">session_id: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">option: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_category [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) </td></tr> 
+            <tr><td align="left">parent_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">top: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">column: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_category_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">meta_title: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">meta_description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">meta_keyword: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_category_filter [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_category_path [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">path_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">path_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">level: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_category_to_layout [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_category_to_store [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_country [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">country_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">iso_code_2: VARCHAR(2) NOT NULL</td></tr> 
+            <tr><td align="left">iso_code_3: VARCHAR(3) NOT NULL</td></tr> 
+            <tr><td align="left">address_format: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">postcode_required: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_coupon [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">coupon_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">coupon_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(20) NOT NULL</td></tr> 
+            <tr><td align="left">type: CHAR(1) NOT NULL</td></tr> 
+            <tr><td align="left">discount: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">logged: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">shipping: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">total: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_start: DATE(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_end: DATE(10) NOT NULL</td></tr> 
+            <tr><td align="left">uses_total: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">uses_customer: VARCHAR(11) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_coupon_category [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">coupon_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">coupon_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_coupon_history [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">coupon_history_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">coupon_history_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">coupon_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_coupon_product [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">coupon_product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">coupon_product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">coupon_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_currency [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">currency_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">currency_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(3) NOT NULL</td></tr> 
+            <tr><td align="left">symbol_left: VARCHAR(12) NOT NULL</td></tr> 
+            <tr><td align="left">symbol_right: VARCHAR(12) NOT NULL</td></tr> 
+            <tr><td align="left">decimal_place: CHAR(1) NOT NULL</td></tr> 
+            <tr><td align="left">value: REAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_custom_field [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">value: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">validation: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">location: VARCHAR(7) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_custom_field_customer_group [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">required: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_custom_field_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_custom_field_value [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">custom_field_value_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">custom_field_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_custom_field_value_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">custom_field_value_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">custom_field_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">telephone: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">fax: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">password: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">salt: VARCHAR(9) NOT NULL</td></tr> 
+            <tr><td align="left">cart: LONGVARCHAR(65535) </td></tr> 
+            <tr><td align="left">wishlist: LONGVARCHAR(65535) </td></tr> 
+            <tr><td align="left">newsletter: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">address_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">approved: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">safe: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">token: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_activity [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_activity_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_activity_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">key: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">data: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_group [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">approval: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_group_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_history [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_history_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_history_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">comment: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_ip [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_ip_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_ip_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_login [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_login_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_login_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">total: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_online [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">url: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">referer: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_reward [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_reward_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_reward_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">points: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_search [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_search_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_search_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">keyword: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">category_id: INTEGER(10) </td></tr> 
+            <tr><td align="left">sub_category: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">description: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">products: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_transaction [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">customer_transaction_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_transaction_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_customer_wishlist [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_download [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">download_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">download_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">filename: VARCHAR(160) NOT NULL</td></tr> 
+            <tr><td align="left">mask: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_download_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">download_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">download_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_event [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">event_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">event_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">trigger: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">action: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_extension [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">extension_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">extension_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(32) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_filter [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">filter_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_filter_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">filter_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_filter_group [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">filter_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">filter_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_filter_group_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">filter_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">filter_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_geo_zone [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">geo_zone_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">geo_zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_information [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">bottom: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_information_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(16777215) NOT NULL</td></tr> 
+            <tr><td align="left">meta_title: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">meta_description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">meta_keyword: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_information_to_layout [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_information_to_store [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">information_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_language [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(5) NOT NULL</td></tr> 
+            <tr><td align="left">locale: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">directory: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_layout [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_layout_module [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">layout_module_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">layout_module_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">position: VARCHAR(14) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_layout_route [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">layout_route_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">layout_route_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">route: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_length_class [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">length_class_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">length_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">value: DECIMAL(15) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_length_class_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">length_class_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">length_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">unit: VARCHAR(4) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_location [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">location_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">location_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">address: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">telephone: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">fax: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">geocode: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) </td></tr> 
+            <tr><td align="left">open: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">comment: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_manufacturer [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">manufacturer_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">manufacturer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) </td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_manufacturer_to_store [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">manufacturer_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">manufacturer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_marketing [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">marketing_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">marketing_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">clicks: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_menu [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">menu_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">menu_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(6) NOT NULL</td></tr> 
+            <tr><td align="left">link: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_menu_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">menu_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">menu_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_menu_module [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">menu_module_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">menu_module_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">menu_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_modification [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">modification_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">modification_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">author: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">version: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">link: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">xml: LONGVARCHAR(16777215) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_module [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">module_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">module_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">setting: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_option [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_option_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_option_value [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">option_value_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">option_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_option_value_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">option_value_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">option_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">invoice_no: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">invoice_prefix: VARCHAR(26) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">store_url: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">telephone: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">fax: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">payment_firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">payment_lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">payment_company: VARCHAR(60) NOT NULL</td></tr> 
+            <tr><td align="left">payment_address_1: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">payment_address_2: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">payment_city: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">payment_postcode: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">payment_country: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">payment_country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">payment_zone: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">payment_zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">payment_address_format: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">payment_custom_field: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">payment_method: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">payment_code: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_company: VARCHAR(60) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_address_1: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_address_2: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_city: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_postcode: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_country: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_zone: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_address_format: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_custom_field: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_method: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">shipping_code: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">comment: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">total: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">order_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">affiliate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">commission: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">marketing_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">tracking: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">currency_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">currency_code: VARCHAR(3) NOT NULL</td></tr> 
+            <tr><td align="left">currency_value: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">forwarded_ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">user_agent: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">accept_language: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_custom_field [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_custom_field_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">custom_field_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">value: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">location: VARCHAR(16) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_history [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_history_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_history_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">notify: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">comment: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_option [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_option_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_option_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">value: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(32) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_product [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">model: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">price: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">total: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">tax: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">reward: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_recurring [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_recurring_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">reference: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">product_quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_frequency: VARCHAR(25) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_cycle: SMALLINT(5) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_duration: SMALLINT(5) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_price: DECIMAL(10) NOT NULL</td></tr> 
+            <tr><td align="left">trial: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">trial_frequency: VARCHAR(25) NOT NULL</td></tr> 
+            <tr><td align="left">trial_cycle: SMALLINT(5) NOT NULL</td></tr> 
+            <tr><td align="left">trial_duration: SMALLINT(5) NOT NULL</td></tr> 
+            <tr><td align="left">trial_price: DECIMAL(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: TINYINT(3) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_recurring_transaction [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_recurring_transaction_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_recurring_transaction_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">reference: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">type: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_status [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_status_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_total [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_total_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_total_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">value: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_order_voucher [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">order_voucher_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">order_voucher_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">voucher_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">from_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">from_email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">to_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">to_email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">voucher_theme_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">message: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(15) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">model: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">sku: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">upc: VARCHAR(12) NOT NULL</td></tr> 
+            <tr><td align="left">ean: VARCHAR(14) NOT NULL</td></tr> 
+            <tr><td align="left">jan: VARCHAR(13) NOT NULL</td></tr> 
+            <tr><td align="left">isbn: VARCHAR(17) NOT NULL</td></tr> 
+            <tr><td align="left">mpn: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">location: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">stock_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) </td></tr> 
+            <tr><td align="left">manufacturer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">shipping: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">price: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">points: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">tax_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_available: DATE(10) NOT NULL</td></tr> 
+            <tr><td align="left">weight: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">weight_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">length: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">width: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">height: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">length_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">subtract: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">minimum: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">viewed: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_attribute [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">attribute_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">attribute_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">text: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">description: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">tag: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">meta_title: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">meta_description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">meta_keyword: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_discount [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_discount_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_discount_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">priority: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">price: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_start: DATE(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_end: DATE(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_filter [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">filter_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_image [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_image_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_image_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) </td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_option [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_option_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">value: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">required: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_option_value [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_option_value_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_option_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">option_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">option_value_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">subtract: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">price: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">price_prefix: VARCHAR(1) NOT NULL</td></tr> 
+            <tr><td align="left">points: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">points_prefix: VARCHAR(1) NOT NULL</td></tr> 
+            <tr><td align="left">weight: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">weight_prefix: VARCHAR(1) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_recurring [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_related [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">related_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">related_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_reward [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_reward_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_reward_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">points: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_special [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_special_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_special_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">priority: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">price: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_start: DATE(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_end: DATE(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_to_category [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">category_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_to_download [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">download_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">download_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_to_layout [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">layout_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_product_to_store [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_recurring [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">price: DECIMAL(10) NOT NULL</td></tr> 
+            <tr><td align="left">frequency: CHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">duration: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">cycle: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">trial_status: TINYINT(3) NOT NULL</td></tr> 
+            <tr><td align="left">trial_price: DECIMAL(10) NOT NULL</td></tr> 
+            <tr><td align="left">trial_frequency: CHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">trial_duration: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">trial_cycle: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: TINYINT(3) NOT NULL</td></tr> 
+            <tr><td align="left">sort_order: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_recurring_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">recurring_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_return [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">return_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">return_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">telephone: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">product: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">model: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">quantity: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">opened: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">return_reason_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">return_action_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">return_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">comment: LONGVARCHAR(65535) </td></tr> 
+            <tr><td align="left">date_ordered: DATE(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_return_action [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">return_action_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">return_action_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_return_history [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">return_history_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">return_history_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">return_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">return_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">notify: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">comment: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_return_reason [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">return_reason_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">return_reason_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_return_status [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">return_status_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">return_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_review [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">review_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">review_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">product_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">author: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">text: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">rating: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_setting [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">setting_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">setting_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">key: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">value: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">serialized: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_stock_status [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">stock_status_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">stock_status_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_store [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">url: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">ssl: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_tax_class [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">tax_class_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">tax_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">description: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_tax_rate [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">tax_rate_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">tax_rate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">geo_zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">rate: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">type: CHAR(1) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_tax_rate_to_customer_group [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">tax_rate_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">tax_rate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">customer_group_id: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_tax_rule [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">tax_rule_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">tax_rule_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">tax_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">tax_rate_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">based: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">priority: INTEGER(10) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_theme [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">theme_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">theme_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">theme: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">route: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">code: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_translation [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">translation_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">translation_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">store_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">route: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">key: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">value: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_upload [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">upload_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">upload_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">filename: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_url_alias [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">url_alias_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">url_alias_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">query: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">keyword: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_user [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">user_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">user_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">user_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">username: VARCHAR(20) NOT NULL</td></tr> 
+            <tr><td align="left">password: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">salt: VARCHAR(9) NOT NULL</td></tr> 
+            <tr><td align="left">firstname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">lastname: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">ip: VARCHAR(40) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_user_group [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">user_group_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">user_group_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">permission: LONGVARCHAR(65535) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_voucher [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">voucher_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">voucher_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(10) NOT NULL</td></tr> 
+            <tr><td align="left">from_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">from_email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">to_name: VARCHAR(64) NOT NULL</td></tr> 
+            <tr><td align="left">to_email: VARCHAR(96) NOT NULL</td></tr> 
+            <tr><td align="left">voucher_theme_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">message: LONGVARCHAR(65535) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_voucher_history [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">voucher_history_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">voucher_history_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">voucher_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">order_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">amount: DECIMAL(15) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_voucher_theme [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">voucher_theme_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">voucher_theme_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">image: VARCHAR(255) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_voucher_theme_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">voucher_theme_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">voucher_theme_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(32) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_weight_class [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">weight_class_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">weight_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">value: DECIMAL(15) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_weight_class_description [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">weight_class_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">weight_class_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">language_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">title: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">unit: VARCHAR(4) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_zone [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">zone_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">name: VARCHAR(128) NOT NULL</td></tr> 
+            <tr><td align="left">code: VARCHAR(32) NOT NULL</td></tr> 
+            <tr><td align="left">status: BIT() NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+    oc_zone_to_geo_zone [label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td align="left">zone_to_geo_zone_id: INTEGER(10) NOT NULL PRIMARY</td></tr> 
+
+            <tr><td align="left">zone_to_geo_zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">country_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">geo_zone_id: INTEGER(10) NOT NULL</td></tr> 
+            <tr><td align="left">date_added: TIMESTAMP(19) NOT NULL</td></tr> 
+            <tr><td align="left">date_modified: TIMESTAMP(19) NOT NULL</td></tr> 
+
+        </table>
+    >]
+
+}

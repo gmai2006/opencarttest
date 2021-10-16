@@ -1,0 +1,82 @@
+[
+  {
+    "zoneId": 0,
+    "dateModified": "1982-10-16T01:27:06.000-0700",
+    "countryId": 0,
+    "geoZoneId": 0,
+    "dateAdded": "1977-10-16T01:27:06.000-0700",
+    "zoneToGeoZoneId": 518634559
+  },
+  {
+    "zoneId": 1,
+    "dateModified": "2068-10-16T01:27:08.000-0700",
+    "countryId": 1,
+    "geoZoneId": 1,
+    "dateAdded": "2035-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 1874094103
+  },
+  {
+    "zoneId": 2,
+    "dateModified": "1998-10-16T01:27:08.000-0700",
+    "countryId": 2,
+    "geoZoneId": 2,
+    "dateAdded": "1994-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 2094396324
+  },
+  {
+    "zoneId": 3,
+    "dateModified": "1928-10-16T00:27:08.000-0800",
+    "countryId": 3,
+    "geoZoneId": 3,
+    "dateAdded": "2063-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 1326466693
+  },
+  {
+    "zoneId": 4,
+    "dateModified": "1916-10-16T00:27:08.000-0800",
+    "countryId": 4,
+    "geoZoneId": 4,
+    "dateAdded": "2098-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 2039115838
+  },
+  {
+    "zoneId": 5,
+    "dateModified": "1906-10-16T00:27:08.000-0800",
+    "countryId": 5,
+    "geoZoneId": 5,
+    "dateAdded": "1947-10-16T00:27:08.000-0800",
+    "zoneToGeoZoneId": 633257456
+  },
+  {
+    "zoneId": 6,
+    "dateModified": "2090-10-16T01:27:08.000-0700",
+    "countryId": 6,
+    "geoZoneId": 6,
+    "dateAdded": "2027-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 1705126410
+  },
+  {
+    "zoneId": 7,
+    "dateModified": "2067-10-16T01:27:08.000-0700",
+    "countryId": 7,
+    "geoZoneId": 7,
+    "dateAdded": "2054-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 584865088
+  },
+  {
+    "zoneId": 8,
+    "dateModified": "2065-10-16T01:27:08.000-0700",
+    "countryId": 8,
+    "geoZoneId": 8,
+    "dateAdded": "2003-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 1284298628
+  },
+  {
+    "zoneId": 9,
+    "dateModified": "2047-10-16T01:27:08.000-0700",
+    "countryId": 9,
+    "geoZoneId": 9,
+    "dateAdded": "2024-10-16T01:27:08.000-0700",
+    "zoneToGeoZoneId": 1481746736
+  }
+]

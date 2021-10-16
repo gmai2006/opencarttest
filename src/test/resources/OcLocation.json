@@ -1,0 +1,112 @@
+[
+  {
+    "image": "66",
+    "address": "Lorem ipsum dolor si0",
+    "name": "Jill",
+    "geocode": "Lorem ipsum dolor si0",
+    "telephone": "964-485-1292",
+    "comment": "Lorem ipsum dolor si0",
+    "fax": "864-631-9377",
+    "open": "Lorem ipsum dolor si0",
+    "locationId": 1596944974
+  },
+  {
+    "image": "87",
+    "address": "Lorem ipsum dolor si1",
+    "name": "Vilhelmina",
+    "geocode": "Lorem ipsum dolor si1",
+    "telephone": "853-478-4284",
+    "comment": "Lorem ipsum dolor si1",
+    "fax": "476-842-1992",
+    "open": "Lorem ipsum dolor si1",
+    "locationId": 574700218
+  },
+  {
+    "image": "94",
+    "address": "Lorem ipsum dolor si2",
+    "name": "Betti",
+    "geocode": "Lorem ipsum dolor si2",
+    "telephone": "133-637-4265",
+    "comment": "Lorem ipsum dolor si2",
+    "fax": "745-756-2256",
+    "open": "Lorem ipsum dolor si2",
+    "locationId": 1701517545
+  },
+  {
+    "image": "6",
+    "address": "Lorem ipsum dolor si3",
+    "name": "Eva",
+    "geocode": "Lorem ipsum dolor si3",
+    "telephone": "275-832-1166",
+    "comment": "Lorem ipsum dolor si3",
+    "fax": "274-243-7914",
+    "open": "Lorem ipsum dolor si3",
+    "locationId": 923193235
+  },
+  {
+    "image": "80",
+    "address": "Lorem ipsum dolor si4",
+    "name": "Marietta",
+    "geocode": "Lorem ipsum dolor si4",
+    "telephone": "986-663-8329",
+    "comment": "Lorem ipsum dolor si4",
+    "fax": "426-951-6849",
+    "open": "Lorem ipsum dolor si4",
+    "locationId": 379416635
+  },
+  {
+    "image": "36",
+    "address": "Lorem ipsum dolor si5",
+    "name": "Kordula",
+    "geocode": "Lorem ipsum dolor si5",
+    "telephone": "886-728-7343",
+    "comment": "Lorem ipsum dolor si5",
+    "fax": "787-733-6549",
+    "open": "Lorem ipsum dolor si5",
+    "locationId": 1010612026
+  },
+  {
+    "image": "27",
+    "address": "Lorem ipsum dolor si6",
+    "name": "Elizabeth",
+    "geocode": "Lorem ipsum dolor si6",
+    "telephone": "343-379-3693",
+    "comment": "Lorem ipsum dolor si6",
+    "fax": "515-869-5942",
+    "open": "Lorem ipsum dolor si6",
+    "locationId": 1161264843
+  },
+  {
+    "image": "71",
+    "address": "Lorem ipsum dolor si7",
+    "name": "Brita",
+    "geocode": "Lorem ipsum dolor si7",
+    "telephone": "248-434-8171",
+    "comment": "Lorem ipsum dolor si7",
+    "fax": "215-293-9247",
+    "open": "Lorem ipsum dolor si7",
+    "locationId": 765349065
+  },
+  {
+    "image": "4",
+    "address": "Lorem ipsum dolor si8",
+    "name": "Nedi",
+    "geocode": "Lorem ipsum dolor si8",
+    "telephone": "374-885-8219",
+    "comment": "Lorem ipsum dolor si8",
+    "fax": "591-852-6528",
+    "open": "Lorem ipsum dolor si8",
+    "locationId": 599482633
+  },
+  {
+    "image": "85",
+    "address": "Lorem ipsum dolor si9",
+    "name": "Giana",
+    "geocode": "Lorem ipsum dolor si9",
+    "telephone": "639-149-9693",
+    "comment": "Lorem ipsum dolor si9",
+    "fax": "888-652-3639",
+    "open": "Lorem ipsum dolor si9",
+    "locationId": 1335999015
+  }
+]

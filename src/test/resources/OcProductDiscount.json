@@ -1,0 +1,102 @@
+[
+  {
+    "customerGroupId": 0,
+    "quantity": 0,
+    "productId": 0,
+    "dateStart": "2079-10-16",
+    "price": 0,
+    "dateEnd": "2042-10-16",
+    "priority": 0,
+    "productDiscountId": 1965929192
+  },
+  {
+    "customerGroupId": 1,
+    "quantity": 1,
+    "productId": 1,
+    "dateStart": "2045-10-16",
+    "price": 1,
+    "dateEnd": "1942-10-16",
+    "priority": 1,
+    "productDiscountId": 1730118204
+  },
+  {
+    "customerGroupId": 2,
+    "quantity": 2,
+    "productId": 2,
+    "dateStart": "1902-10-16",
+    "price": 2,
+    "dateEnd": "1974-10-16",
+    "priority": 2,
+    "productDiscountId": 1760666086
+  },
+  {
+    "customerGroupId": 3,
+    "quantity": 3,
+    "productId": 3,
+    "dateStart": "1957-10-16",
+    "price": 3,
+    "dateEnd": "1961-10-16",
+    "priority": 3,
+    "productDiscountId": 513437964
+  },
+  {
+    "customerGroupId": 4,
+    "quantity": 4,
+    "productId": 4,
+    "dateStart": "1997-10-16",
+    "price": 4,
+    "dateEnd": "1926-10-16",
+    "priority": 4,
+    "productDiscountId": 1470623277
+  },
+  {
+    "customerGroupId": 5,
+    "quantity": 5,
+    "productId": 5,
+    "dateStart": "2097-10-16",
+    "price": 5,
+    "dateEnd": "2073-10-16",
+    "priority": 5,
+    "productDiscountId": 2009757755
+  },
+  {
+    "customerGroupId": 6,
+    "quantity": 6,
+    "productId": 6,
+    "dateStart": "2058-10-16",
+    "price": 6,
+    "dateEnd": "2042-10-16",
+    "priority": 6,
+    "productDiscountId": 1015536131
+  },
+  {
+    "customerGroupId": 7,
+    "quantity": 7,
+    "productId": 7,
+    "dateStart": "1963-10-16",
+    "price": 7,
+    "dateEnd": "1995-10-16",
+    "priority": 7,
+    "productDiscountId": 947565202
+  },
+  {
+    "customerGroupId": 8,
+    "quantity": 8,
+    "productId": 8,
+    "dateStart": "2092-10-16",
+    "price": 8,
+    "dateEnd": "1959-10-16",
+    "priority": 8,
+    "productDiscountId": 1613985282
+  },
+  {
+    "customerGroupId": 9,
+    "quantity": 9,
+    "productId": 9,
+    "dateStart": "1951-10-16",
+    "price": 9,
+    "dateEnd": "2058-10-16",
+    "priority": 9,
+    "productDiscountId": 1256410571
+  }
+]
